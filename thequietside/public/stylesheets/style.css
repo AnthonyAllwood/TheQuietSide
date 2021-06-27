@@ -1,0 +1,55 @@
+/*TAG SELECTORS*/
+body{
+  background-color: #000;
+  color: #fff; 
+}
+h1 { 
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif"; 
+  font-size: 50px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px; 
+}  
+h3{
+  font-weight:bold;
+}
+hr{
+  background-color: #fff;
+}
+/*CLASS SELECTORS*/
+.hidden{
+  display: none;
+}
+.img-productpage{
+  max-height: 500px;
+  display: block;
+  margin: auto;
+}
+.modal-content{
+  background-color: #000;
+  color: #fff;
+}
+.navbar-brand{
+  float: none;
+}
+.price{
+  font-weight: bold;
+  font-size: 20px;
+}
+.row{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.thumbnail{
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 10%;
+  border-color: #296119;
+}
+.img-thumbnail{
+  max-height:250px;
+}
+.thumbnail .description {
+  color: #7F7F7F;
+}

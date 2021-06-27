@@ -1,0 +1,179 @@
+ <div class="row">
+     <div class="col-sm-6 col-md-4 col-ms-offset-4 col-sm-offset-3">
+         <div id="success" class="alert alert-success" {{#if noMessages}}hidden{{/if}}>
+            {{ successMsg }}
+         </div>
+     </div>
+ </div>
+ 
+ <!--Loop through products-->
+ {{# each products}}
+    <div class="row">
+        {{# each this}} 
+            <div class="col-sm-6 col-md-4"> 
+                <div class="thumbnail">       
+                    <img src="{{this.imagePath}}" class="img-thumbnail center-block" alt="..."> 
+                    <a href="/productpage/{{this._id}}"><h3>{{this.title}}</h3></a> 
+                    <p class="description">{{this.description}}</p>  
+                    <div class="clearfix">
+                        <div class="price">${{this.price}}</div>
+                        <a href="/add-to-cart/{{this._id}}" class="btn btn-dark pull-right" role="button">Add to Shopping Cart</a>
+                    </div>
+                </div>  
+            </div>
+        {{/each}}
+    </div>
+ {{/each}}
+
+ <!--Earlier code to test view
+ <div class="row"> 
+    <div class="col-sm-6 col-md-4"> 
+        <div class="thumbnail">       
+            <img src="https://www.billsoutlets.com/4204-large_default/nike-sportswear-club-fleece-zip-hoodie-pants-set.jpg" class="img-thumbnail" alt="Nike F;eece"> 
+            <h3>Nike Tech Fleece</h3>
+            <p class="description">Nike Sportswear Club Fleece Zip Hoodie and Pants Set Yellow/Black/White
+                <br>Standard fit hoodie with full-zip option for versatility
+                <br>Soft and cozy fabric for a comfortable feel
+                <br>Anorak-style hoodie with colorblocking for style
+                <br>Adjustable hoodie for protection
+                <br>Ribbed detailing at the cuffs and hem</p>  
+            <div class="clearfix">
+                <div class="price">$100</div>
+                <a href="#" class="btn btn-success pull-right" role="button">Button</a>
+            </div>
+        </div>  
+    </div>
+    <div class="col-sm-6 col-md-4"> 
+        <div class="thumbnail">       
+            <img src="https://www.billsoutlets.com/4204-large_default/nike-sportswear-club-fleece-zip-hoodie-pants-set.jpg" class="img-thumbnail" alt="Nike F;eece"> 
+            <h3>Nike Tech Fleece</h3>
+            <p class="description">Nike Sportswear Club Fleece Zip Hoodie and Pants Set Yellow/Black/White
+                <br>Standard fit hoodie with full-zip option for versatility
+                <br>Soft and cozy fabric for a comfortable feel
+                <br>Anorak-style hoodie with colorblocking for style
+                <br>Adjustable hoodie for protection
+                <br>Ribbed detailing at the cuffs and hem</p>  
+            <div class="clearfix">
+                <div class="price">$100</div>
+                <a href="#" class="btn btn-success pull-right" role="button">Button</a>
+            </div>
+        </div>  
+    </div>
+    <div class="col-sm-6 col-md-4"> 
+        <div class="thumbnail">       
+            <img src="https://www.billsoutlets.com/4204-large_default/nike-sportswear-club-fleece-zip-hoodie-pants-set.jpg" class="img-thumbnail" alt="Nike F;eece"> 
+            <h3>Nike Tech Fleece</h3>
+            <p class="description">Nike Sportswear Club Fleece Zip Hoodie and Pants Set Yellow/Black/White
+                <br>Standard fit hoodie with full-zip option for versatility
+                <br>Soft and cozy fabric for a comfortable feel
+                <br>Anorak-style hoodie with colorblocking for style
+                <br>Adjustable hoodie for protection
+                <br>Ribbed detailing at the cuffs and hem</p>  
+            <div class="clearfix">
+                <div class="price">$100</div>
+                <a href="#" class="btn btn-success pull-right" role="button">Button</a>
+            </div>
+        </div>  
+    </div>
+</div>
+ <div class="row"> 
+    <div class="col-sm-6 col-md-4"> 
+        <div class="thumbnail">       
+            <img src="https://www.billsoutlets.com/4204-large_default/nike-sportswear-club-fleece-zip-hoodie-pants-set.jpg" class="img-thumbnail" alt="Nike F;eece"> 
+            <h3>Nike Tech Fleece</h3>
+            <p class="description">Nike Sportswear Club Fleece Zip Hoodie and Pants Set Yellow/Black/White
+                <br>Standard fit hoodie with full-zip option for versatility
+                <br>Soft and cozy fabric for a comfortable feel
+                <br>Anorak-style hoodie with colorblocking for style
+                <br>Adjustable hoodie for protection
+                <br>Ribbed detailing at the cuffs and hem</p>  
+            <div class="clearfix">
+                <div class="price">$100</div>
+                <a href="#" class="btn btn-success pull-right" role="button">Button</a>
+            </div>
+        </div>  
+    </div>
+    <div class="col-sm-6 col-md-4"> 
+        <div class="thumbnail">       
+            <img src="https://www.billsoutlets.com/4204-large_default/nike-sportswear-club-fleece-zip-hoodie-pants-set.jpg" class="img-thumbnail" alt="Nike F;eece"> 
+            <h3>Nike Tech Fleece</h3>
+            <p class="description">Nike Sportswear Club Fleece Zip Hoodie and Pants Set Yellow/Black/White
+                <br>Standard fit hoodie with full-zip option for versatility
+                <br>Soft and cozy fabric for a comfortable feel
+                <br>Anorak-style hoodie with colorblocking for style
+                <br>Adjustable hoodie for protection
+                <br>Ribbed detailing at the cuffs and hem</p>  
+            <div class="clearfix">
+                <div class="price">$100</div>
+                <a href="#" class="btn btn-success pull-right" role="button">Button</a>
+            </div>
+        </div>  
+    </div>
+    <div class="col-sm-6 col-md-4"> 
+        <div class="thumbnail">       
+            <img src="https://www.billsoutlets.com/4204-large_default/nike-sportswear-club-fleece-zip-hoodie-pants-set.jpg" class="img-thumbnail" alt="Nike F;eece"> 
+            <h3>Nike Tech Fleece</h3>
+            <p class="description">Nike Sportswear Club Fleece Zip Hoodie and Pants Set Yellow/Black/White
+                <br>Standard fit hoodie with full-zip option for versatility
+                <br>Soft and cozy fabric for a comfortable feel
+                <br>Anorak-style hoodie with colorblocking for style
+                <br>Adjustable hoodie for protection
+                <br>Ribbed detailing at the cuffs and hem</p>  
+            <div class="clearfix">
+                <div class="price">$100</div>
+                <a href="#" class="btn btn-success pull-right" role="button">Button</a>
+            </div>
+        </div>  
+    </div>
+</div>
+ <div class="row"> 
+    <div class="col-sm-6 col-md-4"> 
+        <div class="thumbnail">       
+            <img src="https://www.billsoutlets.com/4204-large_default/nike-sportswear-club-fleece-zip-hoodie-pants-set.jpg" class="img-thumbnail" alt="Nike F;eece"> 
+            <h3>Nike Tech Fleece</h3>
+            <p class="description">Nike Sportswear Club Fleece Zip Hoodie and Pants Set Yellow/Black/White
+                <br>Standard fit hoodie with full-zip option for versatility
+                <br>Soft and cozy fabric for a comfortable feel
+                <br>Anorak-style hoodie with colorblocking for style
+                <br>Adjustable hoodie for protection
+                <br>Ribbed detailing at the cuffs and hem</p>  
+            <div class="clearfix">
+                <div class="price">$100</div>
+                <a href="#" class="btn btn-success pull-right" role="button">Button</a>
+            </div>
+        </div>  
+    </div>
+    <div class="col-sm-6 col-md-4"> 
+        <div class="thumbnail">       
+            <img src="https://www.billsoutlets.com/4204-large_default/nike-sportswear-club-fleece-zip-hoodie-pants-set.jpg" class="img-thumbnail" alt="Nike F;eece"> 
+            <h3>Nike Tech Fleece</h3>
+            <p class="description">Nike Sportswear Club Fleece Zip Hoodie and Pants Set Yellow/Black/White
+                <br>Standard fit hoodie with full-zip option for versatility
+                <br>Soft and cozy fabric for a comfortable feel
+                <br>Anorak-style hoodie with colorblocking for style
+                <br>Adjustable hoodie for protection
+                <br>Ribbed detailing at the cuffs and hem</p>  
+            <div class="clearfix">
+                <div class="price">$100</div>
+                <a href="#" class="btn btn-success pull-right" role="button">Button</a>
+            </div>
+        </div>  
+    </div>
+    <div class="col-sm-6 col-md-4"> 
+        <div class="thumbnail">       
+            <img src="https://www.billsoutlets.com/4204-large_default/nike-sportswear-club-fleece-zip-hoodie-pants-set.jpg" class="img-thumbnail" alt="Nike F;eece"> 
+            <h3>Nike Tech Fleece</h3>
+            <p class="description">Nike Sportswear Club Fleece Zip Hoodie and Pants Set Yellow/Black/White
+                <br>Standard fit hoodie with full-zip option for versatility
+                <br>Soft and cozy fabric for a comfortable feel
+                <br>Anorak-style hoodie with colorblocking for style
+                <br>Adjustable hoodie for protection
+                <br>Ribbed detailing at the cuffs and hem</p>  
+            <div class="clearfix">
+                <div class="price">$100</div>
+                <a href="#" class="btn btn-success pull-right" role="button">Button</a>
+            </div>
+        </div>  
+    </div>
+</div>
+-->

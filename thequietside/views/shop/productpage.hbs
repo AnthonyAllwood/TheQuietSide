@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-lg-6">
+        <img src="{{this.product.imagePath}}" class="img-productpage" alt="...">
+    </div>
+    <div class="col-lg-6">
+        <h2 class="">{{this.product.title}}</h1>
+        <h3 class=""> ${{this.product.price}}</h3>
+        <h6>Product Description:</h6>
+        <h6 class= "description">{{this.product.description}}</h6>
+        <hr>
+        <h5> Size: Z </h5>
+        {{this.product._id}}
+        <form action="/productsize/{{this.product._id}}" method="get">
+            <div class="form-group">
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" class= "btn-check" value= "S" id="sizeS" name="size" autocomplete="off" checked> S
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" class= "btn-check" value= "M" id="sizeM" name="size" autocomplete="off"> M
+                    </label>
+                    <label class="btn btn-secondary">
+                         <input type="radio" class= "btn-check" value= "L" id="sizeL" name="size" autocomplete="off">L
+                    </label>
+                    <label class="btn btn-secondary">
+                         <input type="radio" class= "btn-check" value= "XL" id="sizeXL" name="size" autocomplete="off">XL
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" class= "btn-check"  value= "2XL" id="size2XL" name="size" autocomplete="off">2XL
+                    </label>
+
+                    <input type="submit">
+                </div>
+                <hr>
+                <a href="/add-to-cart/{{this.product._id}}" class="btn btn-dark pull-right" role="button">Add to Shopping Cart</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
